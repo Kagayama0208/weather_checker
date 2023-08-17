@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9de3683a56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <select name="area" id="select_area">
+          <option value="013000">北海道</option>
+          <optgroup label="関東">
+            <option value="130000" selected>東京</option>
+            <option value="120000">千葉</option>
+          </optgroup>
+          <optgroup label="東北">
+            <option value="020000">青森</option>
+            <option value="040000">宮城</option>
+            <option value="060000">山形</option>
+          </optgroup>
+          <optgroup label="中部">
+            <option value="190000">山梨</option>
+            <option value="220000">静岡</option>
+            <option value="230000">愛知</option>
+          </optgroup>
+          <optgroup label="北陸">
+            <option value="170000">石川</option>
+          </optgroup>
+        </select>
+        <!-- <input type="text" placeholder="enter city name" spellcheck="false" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
+      </div>
+      <div class="weather-inf">
+        <img src="images/001lighticons-01.svg" class="weather-icon" />
+
+        <h2 class="city">Tokyo</h2>
+        <h1 class="weather">晴れ時々雪</h1>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
